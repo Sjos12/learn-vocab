@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\VocabController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 /*
@@ -16,3 +17,5 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('pages/Home');
 });
+
+Route::get('/vocab/create', [VocabController::class, 'index'])->name('vocab.create');
