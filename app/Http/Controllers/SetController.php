@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SetRequest;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -12,8 +13,7 @@ class SetController extends Controller
     {
         return Inertia::render('CreateSet', []);
     }
-    public function create()
+    public function create(SetRequest $request)
     {
-        $validated = [];
     }
 }
