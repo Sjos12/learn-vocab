@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\VocabController;
+use App\Http\Controllers\SetController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 /*
@@ -18,4 +18,4 @@ Route::get('/', function () {
     return Inertia::render('Dashboard');
 });
 
-Route::get('/vocab/create', [VocabController::class, 'index'])->name('vocab.create');
+Route::get('/set/create', [SetController::class, 'index'])->name('set.create');
