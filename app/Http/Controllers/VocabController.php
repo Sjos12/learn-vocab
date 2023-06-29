@@ -10,6 +10,6 @@ class VocabController extends Controller
     //
     public function index(Request $request)
     {
-        return Inertia::render('pages/Dashboard', []);
+        return Inertia::render('CreateVocab', []);
     }
 }

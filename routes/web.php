@@ -15,7 +15,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('pages/Home');
+    return Inertia::render('Dashboard');
 });
 
 Route::get('/vocab/create', [VocabController::class, 'index'])->name('vocab.create');
